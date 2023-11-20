@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    max-width: 65vw;
+    padding: 3vw 5vw;
+    margin: 0 30px;
+    box-shadow: 0 15px 20px #abb289;
+    margin: auto;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 600px;
+    text-align: left;
+    color: #2f4f4f;
+    padding-bottom: 1vw;
+    border-bottom: 3px solid silver;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.input-box level,.gender-tlt{
+    width: 95%;
+    color: #2f4f4f;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.input-box input{
+    height: 2vw;
+    width: 80%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    outline: none;
+}
+
+
+.gender-tlt , .gender-category{
+    padding: 3px 0;
+}
+
+.gender-category input , level{
+    color: gray;
+    margin: 0 1px;
+    
+}
+
+.alert p{
+    font-size: 1rem;
+    font-style: italic;
+    color: dimgray;
+    margin: 5px 0;
+    padding: 5px 0;
+    
+}
+.alert a{
+    text-decoration: none;
+}
+
+.alert a :hover{
+    text-decoration: underline;
+}
+
+@media(max-width:550px){
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-bottom: 15px;
+        overflow: auto;
+    }
+    
+    .input-box{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    .gender-tlt, .gender-category {
+        padding: 3px 0;
+        font-size: 0.9rem;
+    }
+
+    .alert p{
+        font-size: 0.8rem;
+    }
+    
+    .btn{
+        background: #6fd649;
+        color: #fff;
+        padding: 8px 35px;
+        margin: 2vw 5vw;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        width: 40vw;
+        font-size: 18px;
+    }
+
+    .input-box input{
+    height: 2vw;
+    width: 80%;
+    padding: 5px 1px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    outline: none;
+    }
+}
